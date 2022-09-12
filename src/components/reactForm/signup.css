@@ -1,0 +1,97 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+.login-forms{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 400px;
+    background-color: #e5e5e5; 
+    height: auto;
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+#eye-icon{
+    position:absolute;
+    right:40px;
+}
+
+.login-forms input{
+    padding: 13px 87px 13px 18px;
+    margin: 20px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    font-size: 100%;
+}
+.err-message{
+    color: #e63946;
+}
+
+.login-forms h1{
+    margin-bottom: 20px;
+}
+
+.password-container{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+
+.button-24 {
+  background: #FF4742;
+  border: 1px solid #FF4742;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.1) 1px 2px 4px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: nunito,roboto,proxima-nova,"proxima nova",sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 16px;
+  min-height: 40px;
+  outline: 0;
+  padding: 12px 82px;
+  text-align: center;
+  text-rendering: geometricprecision;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+}
+
+.button-24:hover,
+.button-24:active {
+  background-color: initial;
+  background-position: 0 0;
+  color: #FF4742;
+}
+
+.button-24:active {
+  opacity: .5;
+}
+
+/* input:not([type]), input[type="text"]
+{
+    padding: 10px 20px;
+}
+
+input:not([type]), input[type="password"]
+{
+background:red;
+}
+input:not([type]), input[type="email"]
+{
+background:red;
+} */
