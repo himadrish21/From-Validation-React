@@ -2,6 +2,7 @@ import React from "react";
 import { useForm } from "react-hook-form";
 import "./signup.css";
 import UsePasswordToggle from "../hooks/UsePasswordToggle";
+import { useState } from "react";
 
 function Signin() {
   const {
@@ -12,13 +13,16 @@ function Signin() {
 
   let [passwordToggle, passwordIcons] = UsePasswordToggle();
 
+  let [details,setDetails]=useState();
+
   let fetchData = (data) => {
     console.log(data);
+    setDetails(data)
   };
   console.log(errors);
-
   return (
-    <form className="login-forms" onSubmit={handleSubmit(fetchData)}>
+    <div>
+      <form className="login-forms" onSubmit={handleSubmit(fetchData)}>
       <h1>LOGIN</h1>
       <h4>Please enter your name,e-mail and password</h4>
       <input
@@ -79,6 +83,7 @@ function Signin() {
       {/* <button type="submit">login</button> */}
       <button className="button-24" type="submit" role="button">Login</button>
     </form>
+    </div>
   );
 }
 
