@@ -20,6 +20,7 @@ function Signin() {
     setDetails(data)
   };
   console.log(errors);
+  console.log(details);
   return (
     <div>
       <form className="login-forms" onSubmit={handleSubmit(fetchData)}>
@@ -83,6 +84,11 @@ function Signin() {
       {/* <button type="submit">login</button> */}
       <button className="button-24" type="submit" role="button">Login</button>
     </form>
+    <div className="user-details">
+    <h3>{details?.Username}</h3>
+    <h3>{details?.email}</h3>
+    <h3>{details?.password}</h3>
+    </div>
     </div>
   );
 }

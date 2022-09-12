@@ -81,17 +81,32 @@
   opacity: .5;
 }
 
+.user-details{
+    margin-top: 30px;
+}
+.user-details h3{
+    font-size: 25px;
+    font-weight: 100;
+}
+
 @media all and (max-width :375px){
     .login-forms{
         width: 300px;
     }
     .login-forms input{
         width: 257px;
-        padding: 13px 87px 13px 18px;
+        padding: 15px 12px 15px 9px;
         margin: 20px;
         border-radius: 10px;
         outline: none;
         border: none;
         font-size: 100%;
     }
+    .user-details{
+        width: 290px;
+    }
+    .user-details h3{
+        font-size: 15px;
+    }
 }
+
